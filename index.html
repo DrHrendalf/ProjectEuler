@@ -1,0 +1,45 @@
+<h3>1st</h3>
+<script language="javascript" type="text/javascript">
+var n=0
+for(var i = 1; i < 1000; i++){
+     if(i%3==0 || i%5==0){
+        n=n+i;
+	}                     
+}
+document.write(n);
+</script>
+
+<hr />
+<h3>2nd</h3>
+<script language="javascript" type="text/javascript">
+var n=0;
+var a=1;
+var b=1;
+var c=0;
+while(c<4000000){
+	c=a+b;
+	if(c%2==0){
+		n=n+c;
+	}
+	a=b;
+	b=c;
+}
+document.write(n);
+</script>
+
+<hr /><h3>3rd</h3>
+
+<script language="javascript" type="text/javascript">
+var n=1000;
+for(var i=2;i<n;i++){
+	var p=0;
+	for(var j=2;j<i;j++){
+		if(i%j==0){
+			p=1;
+		}
+	}
+	if(p==0 && n%i==0){
+		document.write(i + ";");
+	}
+}
+</script>
